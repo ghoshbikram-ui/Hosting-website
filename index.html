@@ -1,10 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Welcome to my page</title>
-  </head>
-  <body>
-    <h1>This is the header</h1>
-    <div>Hi there is nothing to see</div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EveryThinque</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      height: 100vh;
+      background: url('images/hero.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3em;
+      animation: fadeInDown 2s;
+    }
+    .hero p {
+      font-size: 1.2em;
+      animation: fadeInUp 2s;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .services, .testimonials {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h1 class="animate__animated animate__fadeInDown">Welcome to Your Website</h1>
+    <p class="animate__animated animate__fadeInUp">Learn, Grow, and Achieve with Us</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide world-class training and resources to help you succeed.</p>
+    <img src="images/about.jpg" alt="About Image" width="60%">
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card animate__animated animate__zoomIn">
+        <h3>Training</h3>
+        <p>Interactive sessions with experts.</p>
+      </div>
+      <div class="card animate__animated animate__zoomIn">
+        <h3>Workshops</h3>
+        <p>Hands-on learning experiences.</p>
+      </div>
+      <div class="card animate__animated animate__zoomIn">
+        <h3>Mentorship</h3>
+        <p>Guidance from industry leaders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="card animate__animated animate__fadeInLeft">
+        <p>"This program changed my career!"</p>
+        <strong>- Student A</strong>
+      </div>
+      <div class="card animate__animated animate__fadeInRight">
+        <p>"The mentors are amazing and supportive."</p>
+        <strong>- Student B</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@everythinque.com</p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Your Website. All rights reserved.</p>
+  </footer>
+</body>
 </html>
